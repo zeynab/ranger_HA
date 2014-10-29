@@ -1,0 +1,15 @@
+<launch>
+    <node pkg="gmapping" type="slam_gmapping" name="slam">
+        <param name="scan" value="/scan"/>
+        <param name="map_update_interval" value="5" />
+        <param name="linearUpdate" value="0.1" />
+        <param name="angularUpdate" value="0.1" />
+        <param name="temporalUpdate" value="-1." />
+        <param name="xmin" value="-10." />
+        <param name="ymin" value="-10." />
+        <param name="xmax" value="10." />
+        <param name="ymax" value="10." />
+        <param name="particles" value="300" />
+    </node>
+
+</launch>

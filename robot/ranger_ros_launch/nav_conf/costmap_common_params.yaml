@@ -1,0 +1,7 @@
+global_frame: /map
+robot_base_frame: /base_link
+
+footprint: [[0.076, -0.16], [-0.24, -0.16], [-0.24, 0.16], [0.076, 0.16]]
+
+
+
