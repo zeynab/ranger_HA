@@ -1,0 +1,21 @@
+<launch>
+
+  <!-- Run the map server and AMCL -->
+
+  <include file="$(find ranger_ros)/launch/myAmcl.launch" >
+  </include> 
+
+  <!-- Run the robot teleoperation just in case -->
+
+  <include file="$(find ranger_ros)/launch/teleop.launch" >
+  </include>
+
+
+  <include file="$(find ranger_ros)/launch/nav.launch" >
+  </include>
+
+  
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find ranger_ros)/rviz/navigation.rviz" />
+
+
+</launch>
